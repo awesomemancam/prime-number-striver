@@ -1,0 +1,27 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		System.out.print("Welcome\n");
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Please enter a floor: ");
+		int floor = scanner.nextInt();
+		System.out.print("Please enter a ceiling: ");
+		int ceil = scanner.nextInt();
+		
+		while (true) {
+			if (floor >= ceil)
+				break;
+			
+		}
+		
+		System.out.println("Done.");
+
+	}
+
+}

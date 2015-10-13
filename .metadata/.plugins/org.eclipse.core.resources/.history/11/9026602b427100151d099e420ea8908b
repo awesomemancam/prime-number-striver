@@ -1,0 +1,40 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+		System.out.print("Welcome\n");
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Please enter a floor: ");
+		int floor = scanner.nextInt();
+		System.out.print("Please enter a ceiling: ");
+		int ceil = scanner.nextInt();
+		int x = floor;
+		while (true) {
+			if (x >= ceil)
+				break;
+			int y = 2;
+			while (y <= x/2) {
+				if (mod(x,y)) {
+					System.out.println(x);
+				}
+				if (y == x/2)
+					System.out.println(x);
+			}
+		}
+		System.out.println("Done.");
+	}
+	
+	public static boolean mod(int x, int y) {
+		
+		if (x%y == 0)
+			return true;
+		return false;
+		
+	}
+
+}
